@@ -1,8 +1,11 @@
 {
-  "presets": [
-    "next/babel"
-  ],
+  "presets": ["next/babel"],
   "plugins": [
-    ["transform-define", "./env.js"]
+    [
+      "react-hot-loader/babel",
+      "transform-object-rest-spread",
+      "transform-define",
+      "./env.js"
+    ]
   ]
 }

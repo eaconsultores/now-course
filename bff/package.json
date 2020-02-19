@@ -20,5 +20,11 @@
     "react-dom": "15.5.4",
     "semantic-ui-react": "^0.68.3",
     "subscriptions-transport-ws": "^0.5.5"
-  }
+  },
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/node"
+    }
+  ]
 }
