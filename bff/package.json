@@ -6,7 +6,8 @@
   "scripts": {
     "predev": "rm -rf ./node_modules/.cache",
     "dev": "next",
-    "build": "next build",
+    "build": "webpack --progress --verbose --colors --display-error-details --config webpack/common.config.js",
+    "build:production": "npm run clean && npm run build",
     "start": "next start"
   },
   "dependencies": {
